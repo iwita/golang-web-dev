@@ -26,6 +26,7 @@ func counter(w http.ResponseWriter, r *http.Request) {
 			Name:  "counter",
 			Value: "1",
 		})
+		return
 	}
 	val, err := strconv.Atoi(c.Value)
 	if err != nil {
